@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}!
+
+	form(name="myinput", method="POST")
+		span.label Title
+		input(type="text", name="title")
+		input(type="submit", value="Send!")
